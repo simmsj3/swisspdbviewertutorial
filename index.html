@@ -34,7 +34,7 @@
             <div class="step" id="step4">
                 <h2>Step 4: Swiss-PdbViewer Interface Overview</h2>
                 <p>When you launch Swiss-PdbViewer, you'll see the main interface with a toolbar at the top. This toolbar contains various tools for manipulating and analyzing molecular structures.</p>
-                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image13.jpg" alt="Swiss-PdbViewer Toolbar" class="tutorial-image">
+                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/swiss-pdbviewer-toolbar.jpg" alt="Swiss-PdbViewer Toolbar" class="tutorial-image">
                 <p>The toolbar is divided into several sections:</p>
                 <ul>
                     <li>File operations and general controls (left side)</li>
@@ -115,6 +115,72 @@
                         <figcaption>Ribbon representation</figcaption>
                     </figure>
                 </div>
+            </div>
+
+            <div class="step" id="step9">
+                <h2>Step 9: The Control Panel</h2>
+                <p>The Control Panel is a crucial tool for manipulating your structure. If you can't see this window, select Window → Control Panel from the Window menu on the main toolbar.</p>
+                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/control-panel.jpg" alt="Control Panel" class="tutorial-image">
+                <p>The Control Panel provides information about your structure and allows you to change various display options for some or all of the residues. Here's what each column means:</p>
+                <ul>
+                    <li><strong>Group:</strong> Describes a residue in your structure (chain, secondary structure, amino acid, position).</li>
+                    <li><strong>Show:</strong> Toggles visibility of backbone atoms for each residue.</li>
+                    <li><strong>Side:</strong> Toggles visibility of side chains.</li>
+                    <li><strong>Labl:</strong> Adds a floating label next to the residue.</li>
+                    <li><strong>::</strong> Shows whether each residue has an associated surface.</li>
+                    <li><strong>Ribn:</strong> Toggles ribbon representation for each residue.</li>
+                    <li><strong>Col:</strong> Indicates the color applied to each residue.</li>
+                </ul>
+            </div>
+
+            <div class="step" id="step10">
+                <h2>Step 10: Making Selections with the Control Panel</h2>
+                <p>You can use the Control Panel to make selections in your structure:</p>
+                <ul>
+                    <li>Click on a chain identifier to select all residues in that chain.</li>
+                    <li>Click on a secondary structure identifier to select all residues in that piece of secondary structure.</li>
+                    <li>Click on a residue name to select that specific residue.</li>
+                </ul>
+                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/control-panel-selection.jpg" alt="Control Panel Selection" class="tutorial-image">
+                <p>Selected residues are highlighted in red in the Control Panel.</p>
+            </div>
+
+            <div class="step" id="step11">
+                <h2>Step 11: Coloring Schemes</h2>
+                <p>Deep View offers various coloring schemes to help visualize different aspects of your molecule. Access these under the "Color" menu in the main toolbar.</p>
+                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/color-menu.jpg" alt="Color Menu" class="tutorial-image">
+                <p>Some useful coloring schemes include:</p>
+                <ul>
+                    <li><strong>CPK:</strong> Colors atoms by element (Carbon: White, Oxygen: Red, Nitrogen: Blue, Sulphur: Yellow)</li>
+                    <li><strong>Type:</strong> Colors by residue properties (Acidic: Red, Basic: Blue, Polar: Yellow, Hydrophobic: Grey)</li>
+                    <li><strong>Secondary Structure:</strong> Colors by structural elements (Helices: Red, Sheets: Yellow, Loops: Grey)</li>
+                    <li><strong>Chain:</strong> Assigns different colors to each chain in a multi-chain structure</li>
+                </ul>
+                <div class="image-grid">
+                    <figure>
+                        <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/cpk-coloring.jpg" alt="CPK Coloring" class="tutorial-image">
+                        <figcaption>CPK Coloring</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/type-coloring.jpg" alt="Type Coloring" class="tutorial-image">
+                        <figcaption>Type Coloring</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/secondary-structure-coloring.jpg" alt="Secondary Structure Coloring" class="tutorial-image">
+                        <figcaption>Secondary Structure Coloring</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="step" id="step12">
+                <h2>Step 12: Applying Colors in the Control Panel</h2>
+                <p>You can also apply colors using the Control Panel:</p>
+                <ol>
+                    <li>Click the ▼ symbol next to the 'Col' column to choose what you're coloring (e.g., backbone, sidechain, ribbon).</li>
+                    <li>Left-click in a color box to change the color for one residue.</li>
+                    <li>Right-click in a color box to change the color for all residues.</li>
+                </ol>
+                <p>Experiment with different coloring schemes to highlight various aspects of your molecule's structure and properties.</p>
             </div>
         </section>
     </main>
