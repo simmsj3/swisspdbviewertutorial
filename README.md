@@ -19,14 +19,6 @@ The tutorial guides users through the process of:
 - `script.js`: JavaScript file for interactive elements (if any)
 - `images/`: Directory containing all images used in the tutorial
 
-## Viewing the Tutorial
-
-To view the tutorial:
-
-1. Visit [https://yourusername.github.io/repository-name](https://yourusername.github.io/repository-name)
-
-Replace `yourusername` with your GitHub username and `repository-name` with the name of this repository.
-
 ## Local Development
 
 To work on this tutorial locally:
