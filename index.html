@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Molecular Modelling Tutorial - Part 1</title>
+    <title>Interactive Molecular Modelling Tutorial</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,255 +13,278 @@
     <main>
         <section id="tutorial-flow">
             <div class="step" id="step1">
-                <h2>Step 1: Introduction</h2>
-                <p>Welcome to this comprehensive tutorial on molecular modelling and visualisation using SwissPDB Viewer (also known as DeepView). Understanding the 3D structure of proteins is crucial for comprehending their function. While DNA and protein sequence information provide valuable insights, exploring the 3D structure allows us to explain observations that other analyses cannot account for.</p>
-                <p>In this tutorial, you'll learn how to:</p>
-                <ul>
-                    <li>Download and install SwissPDB Viewer</li>
-                    <li>Navigate the user interface</li>
-                    <li>Open and manipulate molecular structures</li>
-                    <li>Use different visualization techniques</li>
-                    <li>Work with the Control Panel</li>
-                    <li>Apply various coloring schemes</li>
-                </ul>
-                <p>This knowledge is fundamental in fields like structural biology and drug discovery, where computational biology plays a crucial role. By the end of this tutorial, you'll be able to visualize and analyze protein structures with confidence.</p>
-                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image1.jpg" alt="Molecular Modelling Introduction" class="tutorial-image">
+                <h2 class="step-title">Step 1: Introduction</h2>
+                <div class="step-content">
+                    <p>Welcome to this comprehensive tutorial on molecular modelling and visualisation using SwissPDB Viewer (also known as DeepView). Understanding the 3D structure of proteins is crucial for comprehending their function. While DNA and protein sequence information provide valuable insights, exploring the 3D structure allows us to explain observations that other analyses cannot account for.</p>
+                    <p>In this tutorial, you'll learn how to:</p>
+                    <ul>
+                        <li>Download and install SwissPDB Viewer</li>
+                        <li>Navigate the user interface</li>
+                        <li>Open and manipulate molecular structures</li>
+                        <li>Use different visualization techniques</li>
+                        <li>Work with the Control Panel</li>
+                        <li>Apply various coloring schemes</li>
+                    </ul>
+                    <p>This knowledge is fundamental in fields like structural biology and drug discovery, where computational biology plays a crucial role. By the end of this tutorial, you'll be able to visualize and analyze protein structures with confidence.</p>
+                    <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image1.jpg" alt="Molecular Modelling Introduction" class="tutorial-image">
+                </div>
             </div>
 
             <div class="step" id="step2">
-                <h2>Step 2: Download SwissPDB Viewer</h2>
-                <p>SwissPDB Viewer is a powerful, free software package developed by the Swiss Institute for Bioinformatics. It offers a wide range of visualization options and even allows for homology modelling and energy minimization. Let's start by downloading the software:</p>
-                <ol>
-                    <li>Click on the "Download SwissPDB" button below. This will take you to the official download page.</li>
-                    <li>On the download page, you may need to accept the terms and conditions. Read through them carefully.</li>
-                    <li>Choose the appropriate version for your operating system (Windows, Mac, or Linux). Make sure you select the version that matches your system architecture (32-bit or 64-bit).</li>
-                    <li>Once you click the download link, the file should start downloading automatically. Depending on your internet speed, this may take a few minutes.</li>
-                    <li>After the download is complete, locate the file in your Downloads folder. It will typically be a compressed file (e.g., .zip for Windows, .tar.gz for Mac/Linux).</li>
-                </ol>
-                <a href="https://spdbv.unil.ch/disclaim.html" target="_blank" class="action-button">Download SwissPDB</a>
-                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image2.jpg" alt="SwissPDB icon" class="tutorial-image">
-                <p><strong>Note:</strong> Always download software from official sources to ensure you're getting a secure and up-to-date version.</p>
+                <h2 class="step-title">Step 2: Download SwissPDB Viewer</h2>
+                <div class="step-content">
+                    <p>SwissPDB Viewer is a powerful, free software package developed by the Swiss Institute for Bioinformatics. It offers a wide range of visualization options and even allows for homology modelling and energy minimization. Let's start by downloading the software:</p>
+                    <ol>
+                        <li>Click on the "Download SwissPDB" button below. This will take you to the official download page.</li>
+                        <li>On the download page, you may need to accept the terms and conditions. Read through them carefully.</li>
+                        <li>Choose the appropriate version for your operating system (Windows, Mac, or Linux). Make sure you select the version that matches your system architecture (32-bit or 64-bit).</li>
+                        <li>Once you click the download link, the file should start downloading automatically. Depending on your internet speed, this may take a few minutes.</li>
+                        <li>After the download is complete, locate the file in your Downloads folder. It will typically be a compressed file (e.g., .zip for Windows, .tar.gz for Mac/Linux).</li>
+                    </ol>
+                    <a href="https://spdbv.unil.ch/disclaim.html" target="_blank" class="action-button">Download SwissPDB</a>
+                    <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image2.jpg" alt="SwissPDB icon" class="tutorial-image">
+                    <p><strong>Note:</strong> Always download software from official sources to ensure you're getting a secure and up-to-date version.</p>
+                </div>
             </div>
 
             <div class="step" id="step3">
-                <h2>Step 3: Install and Launch SwissPDB Viewer</h2>
-                <p>Now that you've downloaded SwissPDB Viewer, let's install and launch it. The process may vary slightly depending on your operating system:</p>
-                <h3>For Windows:</h3>
-                <ol>
-                    <li>Locate the downloaded zip file in your Downloads folder.</li>
-                    <li>Right-click on the zip file and select "Extract All..."</li>
-                    <li>Choose a destination folder for the extracted files (e.g., your Desktop or Documents folder).</li>
-                    <li>Open the extracted folder and look for an executable file named "spdbv.exe".</li>
-                    <li>Double-click on "spdbv.exe" to launch the program.</li>
-                </ol>
-                
-
-                <p>When you launch SwissPDB Viewer for the first time, you'll see a colorful splash screen with molecule imagery and creator information, similar to the one shown below:</p>
-                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/splash-screen.jpg" alt="SwissPDB Viewer Splash Screen" class="tutorial-image">
-                <p><strong>Action:</strong> Click anywhere on the splash screen to make it disappear and access the main program interface. If you don't click, the splash screen will automatically close after a few seconds.</p>
+                <h2 class="step-title">Step 3: Install and Launch SwissPDB Viewer</h2>
+                <div class="step-content">
+                    <p>Now that you've downloaded SwissPDB Viewer, let's install and launch it. The process may vary slightly depending on your operating system:</p>
+                    <h3>For Windows:</h3>
+                    <ol>
+                        <li>Locate the downloaded zip file in your Downloads folder.</li>
+                        <li>Right-click on the zip file and select "Extract All..."</li>
+                        <li>Choose a destination folder for the extracted files (e.g., your Desktop or Documents folder).</li>
+                        <li>Open the extracted folder and look for an executable file named "spdbv.exe".</li>
+                        <li>Double-click on "spdbv.exe" to launch the program.</li>
+                    </ol>
+                    <h3>For Mac:</h3>
+                    <ol>
+                        <li>Locate the downloaded .tar.gz file in your Downloads folder.</li>
+                        <li>Double-click the .tar.gz file to extract its contents.</li>
+                        <li>Drag the extracted SwissPDB Viewer application to your Applications folder.</li>
+                        <li>Open your Applications folder and double-click on the SwissPDB Viewer icon to launch the program.</li>
+                    </ol>
+                    <h3>For Linux:</h3>
+                    <ol>
+                        <li>Open a terminal window.</li>
+                        <li>Navigate to the directory containing the downloaded .tar.gz file.</li>
+                        <li>Extract the contents using the command: <code>tar -xzvf [filename].tar.gz</code></li>
+                        <li>Navigate into the extracted directory.</li>
+                        <li>Run the program using the command: <code>./spdbv</code></li>
+                    </ol>
+                    <p>When you launch SwissPDB Viewer for the first time, you'll see a colorful splash screen with molecule imagery and creator information, similar to the one shown below:</p>
+                    <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/splash-screen.jpg" alt="SwissPDB Viewer Splash Screen" class="tutorial-image">
+                    <p><strong>Action:</strong> Click anywhere on the splash screen to make it disappear and access the main program interface. If you don't click, the splash screen will automatically close after a few seconds.</p>
+                </div>
             </div>
 
             <div class="step" id="step4">
-                <h2>Step 4: Swiss-PdbViewer Interface Overview</h2>
-                <p>After dismissing the splash screen, you'll see the main interface of Swiss-PdbViewer. Let's familiarize ourselves with the key components:</p>
-                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image13.jpg" alt="Swiss-PdbViewer Toolbar" class="tutorial-image">
-                <p>The interface consists of several important areas:</p>
-                <ol>
-                    <li><strong>Menu Bar:</strong> At the very top, you'll find menus like File, Edit, Select, Build, etc. These contain various commands and options for working with your molecular structures.</li>
-                    <li><strong>Toolbar:</strong> Below the menu bar, there's a toolbar with icons for quick access to common functions. The toolbar is divided into several sections:
-                        <ul>
-                            <li><strong>File operations and general controls (left side):</strong> These include options to open files, save your work, and perform general operations.</li>
-                            <li><strong>Measurement and analysis tools (center):</strong> Tools for measuring distances, angles, and performing various analyses on your molecules.</li>
-                            <li><strong>Manipulation tools (right side):</strong> These include options to rotate, translate, and zoom your view of the molecule.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Main Viewing Window:</strong> The largest part of the interface where your molecular structures will be displayed in 3D.</li>
-                    <li><strong>Control Panel:</strong> Usually located to the side or as a separate window, this panel allows you to manipulate individual residues or groups of residues in your structure.</li>
-                    <li><strong>Status Bar:</strong> At the bottom of the window, providing information about the current state of the program or selected elements.</li>
-                </ol>
-                <p>Take a moment to look around the interface and familiarize yourself with these components. In the following steps, we'll dive deeper into using these tools to visualize and analyze molecular structures.</p>
+                <h2 class="step-title">Step 4: Swiss-PdbViewer Interface Overview</h2>
+                <div class="step-content">
+                    <p>After dismissing the splash screen, you'll see the main interface of Swiss-PdbViewer. Let's familiarize ourselves with the key components:</p>
+                    <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/swiss-pdbviewer-toolbar.jpg" alt="Swiss-PdbViewer Toolbar" class="tutorial-image">
+                    <p>The interface consists of several important areas:</p>
+                    <ol>
+                        <li><strong>Menu Bar:</strong> At the very top, you'll find menus like File, Edit, Select, Build, etc. These contain various commands and options for working with your molecular structures.</li>
+                        <li><strong>Toolbar:</strong> Below the menu bar, there's a toolbar with icons for quick access to common functions. The toolbar is divided into several sections:
+                            <ul>
+                                <li><strong>File operations and general controls (left side):</strong> These include options to open files, save your work, and perform general operations.</li>
+                                <li><strong>Measurement and analysis tools (center):</strong> Tools for measuring distances, angles, and performing various analyses on your molecules.</li>
+                                <li><strong>Manipulation tools (right side):</strong> These include options to rotate, translate, and zoom your view of the molecule.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Main Viewing Window:</strong> The largest part of the interface where your molecular structures will be displayed in 3D.</li>
+                        <li><strong>Control Panel:</strong> Usually located to the side or as a separate window, this panel allows you to manipulate individual residues or groups of residues in your structure.</li>
+                        <li><strong>Status Bar:</strong> At the bottom of the window, providing information about the current state of the program or selected elements.</li>
+                    </ol>
+                    <p>Take a moment to look around the interface and familiarize yourself with these components. In the following steps, we'll dive deeper into using these tools to visualize and analyze molecular structures.</p>
+                </div>
             </div>
 
             <div class="step" id="step5">
-                <h2>Step 5: Open Your Custom Structure</h2>
-                <p>Now that we're familiar with the interface, let's open a molecular structure. In this tutorial, we'll assume you have a structure file that you've designed using ProBuilder or obtained from AlphaFold. If you don't have such a file, you can download a sample PDB file from the Protein Data Bank (www.rcsb.org) for practice.</p>
-                <p>To open your structure:</p>
-                <ol>
-                    <li>Ensure you have a structure file (.pdb format) saved on your computer. PDB (Protein Data Bank) format is a standard file format for representing 3D structures of proteins and nucleic acids.</li>
-                    <li>In Swiss-PdbViewer, click on "File" in the top menu.</li>
-                    <li>Select "Open" from the dropdown menu. Alternatively, you can use the keyboard shortcut Ctrl+O (Windows) or Cmd+O (Mac).</li>
-                    <li>In the file browser that appears, navigate to the location where you saved your structure file.</li>
-                    <li>Select the file and click "Open". You may see a loading progress bar as the program reads the file.</li>
-                </ol>
-                <p>After a moment, your structure should appear in the main viewing window. Here are a few things to note:</p>
-                <ul>
-                    <li>If the structure doesn't automatically center in the view, don't worry – we'll cover how to adjust the view in the next step.</li>
-                    <li>Depending on the size and complexity of your structure, it may take a few seconds to load, especially on older computers.</li>
-                    <li>By default, the structure is usually displayed in a line or wireframe representation. We'll learn how to change this in later steps.</li>
-                    <li>If you open multiple PDB files, they will be loaded into separate layers, which can be managed through the Control Panel.</li>
-                </ul>
-                <p><strong>Troubleshooting:</strong> If you encounter an error when opening your file, ensure it's a valid PDB format. Some common issues include:
+                <h2 class="step-title">Step 5: Open Your Custom Structure</h2>
+                <div class="step-content">
+                    <p>Now that we're familiar with the interface, let's open a molecular structure. In this tutorial, we'll assume you have a structure file that you've designed using ProBuilder or obtained from AlphaFold. If you don't have such a file, you can download a sample PDB file from the Protein Data Bank (www.rcsb.org) for practice.</p>
+                    <p>To open your structure:</p>
+                    <ol>
+                        <li>Ensure you have a structure file (.pdb format) saved on your computer. PDB (Protein Data Bank) format is a standard file format for representing 3D structures of proteins and nucleic acids.</li>
+                        <li>In Swiss-PdbViewer, click on "File" in the top menu.</li>
+                        <li>Select "Open" from the dropdown menu. Alternatively, you can use the keyboard shortcut Ctrl+O (Windows) or Cmd+O (Mac).</li>
+                        <li>In the file browser that appears, navigate to the location where you saved your structure file.</li>
+                        <li>Select the file and click "Open". You may see a loading progress bar as the program reads the file.</li>
+                    </ol>
+                    <p>After a moment, your structure should appear in the main viewing window. Here are a few things to note:</p>
+                    <ul>
+                        <li>If the structure doesn't automatically center in the view, don't worry – we'll cover how to adjust the view in the next step.</li>
+                        <li>Depending on the size and complexity of your structure, it may take a few seconds to load, especially on older computers.</li>
+                        <li>By default, the structure is usually displayed in a line or wireframe representation. We'll learn how to change this in later steps.</li>
+                        <li>If you open multiple PDB files, they will be loaded into separate layers, which can be managed through the Control Panel.</li>
+                    </ul>
+                    <p><strong>Troubleshooting:</strong> If you encounter an error when opening your file, ensure it's a valid PDB format. Some common issues include:</p>
                     <ul>
                         <li>File is corrupted or incomplete</li>
                         <li>File is in a different molecular file format (e.g., .mol2, .xyz)</li>
                         <li>File contains unsupported elements or non-standard residues</li>
                     </ul>
-                    If problems persist, try opening a known good PDB file from the Protein Data Bank to verify that SwissPDB Viewer is functioning correctly.
-                </p>
+                    <p>If problems persist, try opening a known good PDB file from the Protein Data Bank to verify that SwissPDB Viewer is functioning correctly.</p>
+                </div>
             </div>
-        </section>
-    </main>
-   
-    <script src="script.js"></script>
-</body>
-</html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Molecular Modelling Tutorial - Part 2</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Interactive Molecular Modelling and Visualisation Tutorial - Continued</h1>
-    </header>
-    <main>
-        <section id="tutorial-flow">
+
+
+
             <div class="step" id="step6">
-                <h2>Step 6: Basic Manipulation Tools</h2>
-                <p>Now that your structure is loaded, let's explore the basic tools for manipulating your view of the molecule. These tools are essential for examining different parts of your structure and understanding its 3D arrangement.</p>
-                <table>
-                    <tr>
-                        <th>Movement</th>
-                        <th>Mouse Control</th>
-                        <th>Description</th>
-                        <th>Toolbar Button</th>
-                    </tr>
-                    <tr>
-                        <td>Rotate</td>
-                        <td>Left mouse button</td>
-                        <td>Click and drag to rotate the structure. Moving up/down rotates around the x-axis, while moving left/right rotates around the y-axis. This allows you to view the molecule from different angles.</td>
-                        <td><img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image14.jpg" alt="Rotate button" class="button-image"></td>
-                    </tr>
-                    <tr>
-                        <td>Translate</td>
-                        <td>Right mouse button</td>
-                        <td>Click and drag to move the structure within the viewing window. This is useful for centering specific parts of your molecule or moving it to a better viewing position.</td>
-                        <td><img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image15.jpg" alt="Translate button" class="button-image"></td>
-                    </tr>
-                    <tr>
-                        <td>Zoom</td>
-                        <td>Both mouse buttons</td>
-                        <td>Click and drag both mouse buttons simultaneously. Moving up zooms out, moving down zooms in. This allows you to examine details or view the overall structure. Alternatively, you can use the scroll wheel on your mouse.</td>
-                        <td><img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image16.jpg" alt="Zoom button" class="button-image"></td>
-                    </tr>
-                </table>
-                <p><strong>Practice exercise:</strong> Try these movements with your loaded structure:</p>
-                <ol>
-                    <li>Rotate the molecule 360 degrees around the vertical axis.</li>
-                    <li>Zoom in to examine a specific region, then zoom out to see the whole structure.</li>
-                    <li>Use the translate function to move the molecule to different areas of the viewing window.</li>
-                </ol>
-                <p>Remember, you can always reset your view if you get lost – we'll cover that in the next step.</p>
+                <h2 class="step-title">Step 6: Basic Manipulation Tools</h2>
+                <div class="step-content">
+                    <p>Now that your structure is loaded, let's explore the basic tools for manipulating your view of the molecule. These tools are essential for examining different parts of your structure.</p>
+                    <table>
+                        <tr>
+                            <th>Movement</th>
+                            <th>Mouse Control</th>
+                            <th>Description</th>
+                            <th>Toolbar Button</th>
+                        </tr>
+                        <tr>
+                            <td>Rotate</td>
+                            <td>Left mouse button</td>
+                            <td>Click and drag to rotate the structure. Moving up/down rotates around the x-axis, while moving left/right rotates around the y-axis.</td>
+                            <td><img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image14.jpg" alt="Rotate button" class="button-image"></td>
+                        </tr>
+                        <tr>
+                            <td>Translate</td>
+                            <td>Right mouse button</td>
+                            <td>Click and drag to move the structure within the viewing window. This is useful for centering specific parts of your molecule.</td>
+                            <td><img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image15.jpg" alt="Translate button" class="button-image"></td>
+                        </tr>
+                        <tr>
+                            <td>Zoom</td>
+                            <td>Both mouse buttons</td>
+                            <td>Click and drag both mouse buttons simultaneously. Moving up zooms out, moving down zooms in. This allows you to examine details or view the overall structure.</td>
+                            <td><img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image16.jpg" alt="Zoom button" class="button-image"></td>
+                        </tr>
+                    </table>
+                    <p>Practice using these tools to get comfortable manipulating your view of the molecule. Remember, you can always reset your view if you get lost – we'll cover that in the next step.</p>
+                </div>
             </div>
 
             <div class="step" id="step7">
-                <h2>Step 7: Centre View</h2>
-                <p>After manipulating your view, you might want to reset it to a standard position. The "Centre View" function is perfect for this:</p>
-                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image21.jpg" alt="Centre View button" class="button-image">
-                <p>This button, typically the leftmost on the toolbar, performs several actions simultaneously:</p>
-                <ul>
-                    <li>It adjusts the translation of your molecule so that it's centered in the viewing window.</li>
-                    <li>It adjusts the zoom level so that the entire molecule is visible.</li>
-                    <li>It resets the center of rotation to the middle of the visible structure.</li>
-                </ul>
-                <p><strong>Action:</strong> Try using the Centre View button now. Notice how it repositions your molecule for optimal viewing.</p>
-                <p><strong>Tip:</strong> Use this function whenever you feel "lost" in your structure or when you want to start examining it from a standard view.</p>
+                <h2 class="step-title">Step 7: Centre View</h2>
+                <div class="step-content">
+                    <p>Sometimes, after manipulating your view, you might want to reset it to a standard position. The "Centre View" function is perfect for this:</p>
+                    <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image21.jpg" alt="Centre View button" class="button-image">
+                    <p>This button, typically the leftmost on the toolbar, does several things:</p>
+                    <ul>
+                        <li>It adjusts the translation of your molecule so that it's centered in the viewing window.</li>
+                        <li>It adjusts the zoom level so that the entire molecule is visible.</li>
+                        <li>It resets the center of rotation to the middle of the visible structure.</li>
+                    </ul>
+                    <p><strong>Action:</strong> Try using the Centre View button now. Notice how it repositions your molecule for optimal viewing.</p>
+                </div>
             </div>
 
             <div class="step" id="step8">
-                <h2>Step 8: The Control Panel</h2>
-                <p>The Control Panel is a powerful tool for manipulating your structure at a more detailed level. It allows you to control the display of individual residues or groups of residues.</p>
-                <p>If you can't see the Control Panel:</p>
-                <ol>
-                    <li>Go to the "Window" menu in the top toolbar.</li>
-                    <li>Select "Control Panel" from the dropdown list.</li>
-                </ol>
-                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/control-panel.jpg" alt="Control Panel" class="tutorial-image">
-                <p>The Control Panel provides detailed information about your structure and allows you to change various display options. Here's what each column in the Control Panel means:</p>
-                <ul>
-                    <li><strong>Group:</strong> This column describes each residue in your structure. The format is typically [Chain][Secondary Structure][Amino Acid][Position]. For example, "A s GLY95" means Chain A, part of a β-sheet (s), Glycine at position 95.</li>
-                    <li><strong>Show:</strong> Toggles visibility of backbone atoms for each residue. A checkmark means the backbone is visible.</li>
-                    <li><strong>Side:</strong> Toggles visibility of side chains for each residue. A checkmark means the side chain is visible.</li>
-                    <li><strong>Labl:</strong> Adds a floating label next to the residue in the 3D view. Useful for identifying specific residues.</li>
-                    <li><strong>::</strong> Shows whether each residue has an associated surface. This is used when displaying molecular surfaces.</li>
-                    <li><strong>Ribn:</strong> Toggles ribbon representation for each residue. Useful for visualizing secondary structure.</li>
-                    <li><strong>Col:</strong> Indicates the color applied to each residue. You can change colors here.</li>
-                </ul>
-                <p>You can click on these columns to toggle options on or off for individual residues or entire sections of your structure.</p>
-                <p><strong>Practice:</strong> Try toggling different options in the Control Panel and observe how it affects the display of your molecule in the main viewing window.</p>
+                <h2 class="step-title">Step 8: The Control Panel</h2>
+                <div class="step-content">
+                    <p>The Control Panel is a powerful tool for manipulating your structure at a more detailed level. If you can't see the Control Panel:</p>
+                    <ol>
+                        <li>Go to the "Window" menu in the top toolbar.</li>
+                        <li>Select "Control Panel" from the dropdown list.</li>
+                    </ol>
+                    <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/control-panel.jpg" alt="Control Panel" class="tutorial-image">
+                    <p>The Control Panel provides detailed information about your structure and allows you to change various display options. Here's what each column in the Control Panel means:</p>
+                    <ul>
+                        <li><strong>Group:</strong> This column describes each residue in your structure. The format is typically [Chain][Secondary Structure][Amino Acid][Position]. For example, "A s GLY95" means Chain A, part of a β-sheet (s), Glycine at position 95.</li>
+                        <li><strong>Show:</strong> Toggles visibility of backbone atoms for each residue.</li>
+                        <li><strong>Side:</strong> Toggles visibility of side chains for each residue.</li>
+                        <li><strong>Labl:</strong> Adds a floating label next to the residue in the 3D view.</li>
+                        <li><strong>::</strong> Shows whether each residue has an associated surface.</li>
+                        <li><strong>Ribn:</strong> Toggles ribbon representation for each residue.</li>
+                        <li><strong>Col:</strong> Indicates the color applied to each residue.</li>
+                    </ul>
+                    <p>You can click on these columns to toggle options on or off for individual residues or entire sections of your structure.</p>
+                </div>
             </div>
 
             <div class="step" id="step9">
-                <h2>Step 9: Making Selections with the Control Panel</h2>
-                <p>The Control Panel is not just for viewing information; it's also a powerful tool for selecting specific parts of your structure. This is crucial for many operations, such as changing colors or representations of specific regions.</p>
-                <p>Here's how you can make selections:</p>
-                <ul>
-                    <li><strong>Select a single residue:</strong> Simply click on the residue name in the "Group" column.</li>
-                    <li><strong>Select all residues in a chain:</strong> Click on the chain identifier at the start of the chain in the "Group" column.</li>
-                    <li><strong>Select all residues in a secondary structure element:</strong> Click on the secondary structure identifier (H for helix, S for sheet, etc.) in the "Group" column.</li>
-                    <li><strong>Select multiple residues:</strong> Click and drag over multiple rows in the Control Panel.</li>
-                    <li><strong>Add to a selection:</strong> Hold Ctrl (Windows) or Cmd (Mac) while clicking to add to your current selection.</li>
-                    <li><strong>Select a range:</strong> Click the first residue, then hold Shift and click the last residue to select all residues in between.</li>
-                </ul>
-                <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/control-panel-selection.jpg" alt="Control Panel Selection" class="tutorial-image">
-                <p>Selected residues are highlighted in red in the Control Panel. In the 3D view, selected residues are typically highlighted or displayed differently, depending on your current visualization settings.</p>
-                <p><strong>Practice exercise:</strong> Try the following selections:</p>
-                <ol>
-                    <li>Select all residues in an alpha helix.</li>
-                    <li>Select a range of 10 consecutive residues.</li>
-                    <li>Select all glycine residues in your structure.</li>
-                </ol>
-                <p><strong>Tip:</strong> You can also use the "Select" menu in the top toolbar for more advanced selection options, such as selecting by residue type or solvent accessibility.</p>
+                <h2 class="step-title">Step 9: Making Selections with the Control Panel</h2>
+                <div class="step-content">
+                    <p>The Control Panel is not just for viewing information; it's also a powerful tool for selecting specific parts of your structure. This is crucial for many operations, such as changing colors or representations of specific regions.</p>
+                    <p>Here's how you can make selections:</p>
+                    <ul>
+                        <li><strong>Select a single residue:</strong> Simply click on the residue name in the "Group" column.</li>
+                        <li><strong>Select all residues in a chain:</strong> Click on the chain identifier at the start of the chain in the "Group" column.</li>
+                        <li><strong>Select all residues in a secondary structure element:</strong> Click on the secondary structure identifier (H for helix, S for sheet, etc.) in the "Group" column.</li>
+                        <li><strong>Select multiple residues:</strong> Click and drag over multiple rows in the Control Panel.</li>
+                        <li><strong>Add to a selection:</strong> Hold Ctrl (Windows) or Cmd (Mac) while clicking to add to your current selection.</li>
+                    </ul>
+                    <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/control-panel-selection.jpg" alt="Control Panel Selection" class="tutorial-image">
+                    <p>Selected residues are highlighted in red in the Control Panel. In the 3D view, selected residues are typically highlighted or displayed differently, depending on your current visualization settings.</p>
+                    <p><strong>Action:</strong> Try selecting different parts of your structure using the Control Panel. Notice how the selections are reflected in your 3D view.</p>
+                </div>
             </div>
 
             <div class="step" id="step10">
-                <h2>Step 10: Different Structural Representations</h2>
-                <p>SwissPDB Viewer offers various ways to represent molecular structures, each highlighting different aspects of the molecule. Understanding these representations is crucial for effective structural analysis.</p>
-                <div class="image-grid">
-                    <figure>
-                        <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image24.jpg" alt="Ball and stick representation" class="tutorial-image">
-                        <figcaption>Ball and stick representation: Shows all atoms as spheres connected by sticks (bonds). Useful for detailed views of small molecules or specific regions. It provides a balance between showing atomic detail and overall structure.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image25.jpg" alt="Backbone representation" class="tutorial-image">
-                        <figcaption>Backbone representation: Shows only the main chain atoms, omitting side chains. Good for visualizing the overall fold of a protein without the clutter of side chains. This is particularly useful for large proteins or when comparing multiple structures.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image26.jpg" alt="Spacefilling representation" class="tutorial-image">
-                        <figcaption>Spacefilling representation: Atoms are shown as spheres with their full van der Waals radii. Useful for visualizing surface properties and interactions. This representation gives a good sense of the molecule's volume and shape.</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image27.jpg" alt="Ribbon representation" class="tutorial-image">
-                        <figcaption>Ribbon representation: Simplifies the structure to show secondary structure elements. Helices are shown as coiled ribbons, beta sheets as arrows, and loops as thin tubes. This is excellent for visualizing the overall fold and secondary structure composition of proteins.</figcaption>
-                    </figure>
+                <h2 class="step-title">Step 10: Different Structural Representations</h2>
+                <div class="step-content">
+                    <p>SwissPDB Viewer offers various ways to represent molecular structures, each highlighting different aspects of the molecule. Let's explore some common representations:</p>
+                    <div class="image-grid">
+                        <figure>
+                            <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image24.jpg" alt="Ball and stick representation" class="tutorial-image">
+                            <figcaption>Ball and stick representation: Shows all atoms as spheres connected by sticks (bonds). Useful for detailed views of small molecules or specific regions.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image25.jpg" alt="Backbone representation" class="tutorial-image">
+                            <figcaption>Backbone representation: Shows only the main chain atoms, omitting side chains. Good for visualizing the overall fold of a protein.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image26.jpg" alt="Spacefilling representation" class="tutorial-image">
+                            <figcaption>Spacefilling representation: Atoms are shown as spheres with their full van der Waals radii. Useful for visualizing surface properties and interactions.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/image27.jpg" alt="Ribbon representation" class="tutorial-image">
+                            <figcaption>Ribbon representation: Simplifies the structure to show secondary structure elements. Helices are shown as coiled ribbons, beta sheets as arrows, and loops as thin tubes.</figcaption>
+                        </figure>
+                    </div>
+                    <p>To change the representation:</p>
+                    <ol>
+                        <li>Select the part of the molecule you want to change using the Control Panel.</li>
+                        <li>Go to the "Display" menu in the top toolbar.</li>
+                        <li>Choose the desired representation from the options available.</li>
+                    </ol>
+                    <p><strong>Action:</strong> Try displaying different parts of your molecule in different representations. For example, show the backbone in ribbon representation and a specific residue in ball and stick representation.</p>
                 </div>
-                <p>To change the representation of your molecule:</p>
-                <ol>
-                    <li>Select the part of the molecule you want to change using the Control Panel (as learned in Step 9).</li>
-                    <li>Go to the "Display" menu in the top toolbar.</li>
-                    <li>Choose the desired representation from the options available.</li>
-                </ol>
-                <p><strong>Practice exercise:</strong> Try displaying different parts of your molecule in different representations. For example:</p>
-                <ul>
-                    <li>Show the backbone in ribbon representation</li>
-                    <li>Display a specific residue in ball and stick representation</li>
-                    <li>Use spacefilling representation for surface residues</li>
-                </ul>
-                <p><strong>Tip:</strong> Combining different representations can be very powerful for highlighting specific features of your molecule while maintaining context of the overall structure.</p>
+            </div>
+
+            <div class="step" id="step11">
+                <h2 class="step-title">Step 11: Coloring Schemes</h2>
+                <div class="step-content">
+                    <p>Deep View offers various coloring schemes to help visualize different aspects of your molecule. Access these under the "Color" menu in the main toolbar.</p>
+                    <img src="https://raw.githubusercontent.com/simmsj3/swisspdbviewertutorial/main/images/color-menu.jpg" alt="Color Menu" class="tutorial-image">
+                    <p>Some useful coloring schemes include:</p>
+                    <ul>
+                        <li><strong>CPK:</strong> Colors atoms by element (Carbon: White, Oxygen: Red, Nitrogen: Blue, Sulphur: Yellow)</li>
+                        <li><strong>Type:</strong> Colors by residue properties (Acidic: Red, Basic: Blue, Polar: Yellow, Hydrophobic: Grey)</li>
+                        <li><strong>Secondary Structure:</strong> Colors by structural elements (Helices: Red, Sheets: Yellow, Loops: Grey)</li>
+                        <li><strong>Chain:</strong> Assigns different colors to each chain in a multi-chain structure</li>
+                    </ul>
+                    <p><strong>Action:</strong> Experiment with different coloring schemes to highlight various aspects of your molecule's structure and properties.</p>
+                </div>
+            </div>
+
+            <div class="step" id="step12">
+                <h2 class="step-title">Step 12: Applying Colors in the Control Panel</h2>
+                <div class="step-content">
+                    <p>You can also apply colors using the Control Panel:</p>
+                    <ol>
+                        <li>Click the ▼ symbol next to the 'Col' column to choose what you're coloring (e.g., backbone, sidechain, ribbon).</li>
+                        <li>Left-click in a color box to change the color for one residue.</li>
+                        <li>Right-click in a color box to change the color for all residues.</li>
+                    </ol>
+                    <p><strong>Final Action:</strong> Try creating a custom color scheme for your molecule. For example, color the helices red, the sheets blue, and a specific residue of interest in yellow.</p>
+                    <p>Congratulations! You've completed this comprehensive tutorial on using SwissPDB Viewer. You now have the basic skills to visualize and analyze protein structures. Remember, practice is key to becoming proficient with this powerful tool. Keep exploring and experimenting with different structures and visualization techniques!</p>
+                </div>
             </div>
         </section>
     </main>
@@ -271,4 +294,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
